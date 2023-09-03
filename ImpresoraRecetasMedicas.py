@@ -17,13 +17,22 @@ def datos_medicamento(a, b, c):
     print('Instrucciones de uso: ', c)
 
 
+def datos_proximo_turno(a, b):
+    print('####################')
+    print('Fecha de su proximo turno: ', a)
+    print('Hora de su proximo turno: ', b)
+
+
 nombreP = input('Ingrese el nombre del paciente: ')
 fechaP = input('Ingrese la fecha de nacimiento del paciente: ')
 nombreM = input('Ingrese el nombre del medicamento: ')
 dosisM = input('Ingrese la dosis a tomar del medicamento: ')
 instruccionesM = input('Ingrese las instrucciones de uso del medicamento: ')
+fechaT = input('Ingrese la fecha de su proximo turno: ')
+horaT = input('Ingrese la hora de su proximo turno: ')
 print('\n')
 datos_clinica()
 datos_paciente(nombreP, fechaP)
 datos_medicamento(nombreM, dosisM, instruccionesM)
+datos_proximo_turno(fechaT, horaT)
 print('####################')
